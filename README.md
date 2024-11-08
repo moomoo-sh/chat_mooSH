@@ -8,7 +8,11 @@ The main difference is that it all runs locally using llama-cpp-python.
 ## Installation
 1. Install llama-cpp-python:
 ```bash
+# CPU
 pip install llama-cpp-python
+
+# or with CUDA support
+pip install llama-cpp-python -C cmake.args="-DGGML_CUDA=on"  
 ```
 2. Download models in gguf format then run the python script:
 ```bash
